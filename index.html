@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Profile and Photos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normal.css">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Fira+Mono:wght@400;500;700&family=Freehand&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Mansalva&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poor+Story&family=Rubik+Vinyl&family=Silkscreen:wght@400;700&display=swap');
+</style>
+</head>
+<!-- bg -->
+<div class='box'>
+    <div class='wave -one'></div>
+    <div class='wave -two'></div>
+    <div class='wave -three'></div>
+</div>
+
+
+<!-- bg -->
+
+<body class="bg-bb">
+<div class="mt-12">
+<div class="gallery mx-auto flex items-center justify-center">
+
+      <img src="alprofile.png" alt="yoyo">
+      <img src="alina2.jpg" alt="yoyo">
+      <img src="alina3.jpg" alt="yoyo">
+      <img src="alina5.jpg" alt="yoyo">
+      <img src="alina4.jpg" alt="yoyo">
+</div> 
+<div class="mx-auto mt-10 flex items-center justify-center ">
+  <h2 class="blob-btn" href="#">Alvinargis</h2>
+</div>
+
+
+<div class="date">
+  <span class="hour"></span><span class="min"></span><span class="sec"></span>
+</div>
+<div class="flex fnts-1 space-x-2 justify-center m-10 mb-0 p-4">
+  <iframe style="border-radius:12px" class="fnts-1"
+    src="https://open.spotify.com/embed/playlist/42ZKdvhlmJwQXXzck5UMVb?utm_source=generator&theme=0" width="400"
+    height="100" frameBorder="0" allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+<section class="overflow-hidden text-gray-700 m-3 -mt-5 mb-10" style="pointer-events: all;">
+  <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+    <div class="flex flex-wrap -m-1 md:-m-2">
+      <div class="flex flex-wrap w-1/3 hve">
+        <div class="w-full p-1 md:p-2">
+          <img alt="gallery" class=" block object-cover object-center w-full h-full rounded-lg"
+            src="alina.jpg">
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3 hve">
+        <div class="w-full p-1 md:p-2">
+          <img alt="gallery" class=" block object-cover object-center w-full h-full rounded-lg"
+            src="alina2.jpg">
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3 hve">
+        <div class="w-full p-1 md:p-2">
+          <img alt="gallery" class=" block object-cover object-center w-full h-full rounded-lg"
+            src="alina3.jpg">
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3 hve">
+        <div class="w-full p-1 md:p-2">
+          <img alt="gallery" class=" block object-cover object-center w-full h-full rounded-lg"
+            src="alina4.jpg">
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3 hve">
+        <div class="w-full p-1 md:p-2">
+          <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+            src="alina5.jpg">
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3 hve">
+        <div class="w-full p-1 md:p-2">
+          <img alt="gallery" class=" block object-cover object-center w-full h-full rounded-lg"
+            src="alprofile.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  
+    function clock() {
+      let d = new Date(),
+        h = d.getHours(),
+        m = d.getMinutes(),
+        s = d.getSeconds();
+
+      if (h < 10) h = `0${h}`;
+      if (m < 10) m = `0${m}`;
+      if (s < 10) s = `0${s}`;
+
+      document.querySelector('.hour').textContent = h;
+      document.querySelector('.min').textContent = m;
+      document.querySelector('.sec').textContent = s;
+
+      setTimeout(clock, 1000);
+    }
+
+    clock();
+</script>
+
+
+<script defer src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+  <footer class="text-center m-auto mb-6 fnts-2 lg:text-left  text-gray-200 flex items-center justify-center">
+
+ <p>Made with 💕 by Msaconst</p>
+
+  </footer>
+
+
+</body>
+
+</html>
